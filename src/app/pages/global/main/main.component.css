@@ -1,0 +1,13 @@
+article{
+  margin: 5% auto;
+  width: 80%;
+}
+body{
+  background-color: gray;
+}
+app-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}

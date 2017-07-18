@@ -12,9 +12,12 @@ import { AboutComponent } from './pages/about/about.component';
 
 import { AppRoutingModule } from './app-routing.module';
 // place to import material
-import {MdButtonModule} from '@angular/material';
+import {MdButtonModule, MdCardModule} from '@angular/material';
 import 'hammerjs';
 import { DetailComponent } from './pages/detail/detail.component';
+import { MainComponent } from './pages/global/main/main.component';
+import { CardComponent } from './pages/index/card/card.component';
+import { RecommendComponent } from './pages/index/recommend/recommend.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { DetailComponent } from './pages/detail/detail.component';
     IndexComponent,
     AboutComponent,
     DetailComponent,
+    MainComponent,
+    CardComponent,
+    RecommendComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +37,7 @@ import { DetailComponent } from './pages/detail/detail.component';
     HttpModule,
     BrowserAnimationsModule,
     MdButtonModule,
+    MdCardModule,
     AppRoutingModule,
   ],
   providers: [],
