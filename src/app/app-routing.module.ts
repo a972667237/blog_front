@@ -7,23 +7,20 @@ import { AboutComponent } from './pages/about/about.component';
 import { DetailComponent } from './pages/detail/detail.component';
 
 export const routes: Routes = [
-  {
-    path: '',
-    component: IndexComponent,
-    canActivateChild: [],
-    children: [
-      {
-        path: 'index',
-        component: IndexComponent
-      },{
-        path: 'about',
-        component: AboutComponent
-      },{
-        path: 'detail',
-        component: DetailComponent
-      }
-    ]
-  }
+    {
+      path: 'index',
+      component: IndexComponent
+    },{
+      path: 'about',
+      component: AboutComponent
+    },{
+      path: 'detail',
+      component: DetailComponent
+    },{
+      path: '',
+      redirectTo: '/index',
+      pathMatch: 'full'
+    }
 ];
 
 const routing: ModuleWithProviders  = RouterModule.forRoot(routes);
