@@ -1,20 +1,14 @@
 <md-card class="article_card">
   <md-card-header>
-    <md-card-title>文章标题</md-card-title>
-    <md-card-subtitle>作者以及发布时间</md-card-subtitle>
+    <md-card-title>{{ article.title }}</md-card-title>
+    <md-card-subtitle>write at {{ article.time }} by {{ article.author }}</md-card-subtitle>
   </md-card-header>
   <md-card-content>
     <p class="descript">
-      it's a place with no more than 50 word
-      it's a place with no more than 50 word
-      it's a place with no more than 50 word
-      it's a place with no more than 50 word
-      it's a place with no more than 50 word
-      it's a place with no more than 50 word
-      it's a place with no more than 50 word
+      {{ article.descript }}
     </p>
   </md-card-content>
   <md-card-actions>
-    <button md-button>Read More</button>
+    <button md-button data-id="{{ article.id }}">Read More</button>
   </md-card-actions>
 </md-card>
