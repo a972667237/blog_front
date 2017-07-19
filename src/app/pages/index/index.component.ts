@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Article_list } from '../../models/article_list';
+import { Article_preview } from '../../models/article_preview';
+import { ArticleListServiceService } from '../../services/article-list-service.service';
 
 @Component({
   selector: 'app-index',
@@ -6,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
-
-  constructor() { }
+  art_list: Article_list;
+  constructor( private articleListService: ArticleListServiceService ) { }
 
   ngOnInit() {
+    this.art_list = this.articleListService.getArticleList(0);
   }
 
 }
