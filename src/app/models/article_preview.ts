@@ -1,4 +1,4 @@
-export interface article_preview{
+export interface Article_preview{
   id: number;
   title: string;
   time: string;
