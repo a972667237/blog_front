@@ -19,6 +19,10 @@ import { MainComponent } from './pages/global/main/main.component';
 import { CardComponent } from './pages/index/card/card.component';
 import { RecommendComponent } from './pages/index/recommend/recommend.component';
 
+// place to import services
+import { ArticleListServiceService } from './services/article-list-service.service';
+import { ArticleGetServiceService } from './services/article-get-service.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +44,10 @@ import { RecommendComponent } from './pages/index/recommend/recommend.component'
     MdCardModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    ArticleListServiceService,
+    ArticleGetServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
