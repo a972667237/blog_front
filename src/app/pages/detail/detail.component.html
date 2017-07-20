@@ -1,3 +1,12 @@
-<p>
-  detail works!
-</p>
+<div class="container">
+  <header>
+    <h1 class="title">{{article.title}}</h1>
+    <h4 class="info">write by {{article.author}} at {{article.time}}</h4>
+  </header>
+  <article>
+    {{ article.content }}
+  </article>
+  <footer>
+    <button md-button>Back<<<</button>
+  </footer>
+</div>
