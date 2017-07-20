@@ -4,17 +4,8 @@
   </md-card-header>
   <md-card-content>
     <div class="commend_url">
-      <div>
-        <a href="#">推荐文章1</a>
-      </div>
-      <div>
-        <a href="#">推荐文章1</a>
-      </div>
-      <div>
-        <a href="#">推荐文章1</a>
-      </div>
-      <div>
-        <a href="#">推荐文章1</a>
+      <div *ngFor="let re of recommend">
+        <a routerLink="/detail/{{ re.id }}">{{re.title}}</a>
       </div>
     </div>
   </md-card-content>

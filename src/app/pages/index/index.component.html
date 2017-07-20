@@ -3,6 +3,6 @@
     <app-card *ngFor="let article of art_list.article_all" [article]="article"></app-card>
   </div>
   <div class="right">
-    <app-recommend></app-recommend>
+    <app-recommend [recommend]="art_list.recommend"></app-recommend>
   </div>
 </div>
